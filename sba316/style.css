@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Quattrocento&display=swap');
+
+html {
+
+    box-sizing: content-box;
+
+}
+
+body {
+    margin: auto;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    background-color: #fce3ec;
+    font-family: 'Quattrocento', serif;
+    font-family: 'Love Ya Like A Sister', cursive;
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 3vh;
+    background-image: url("https://www.misskatecuttables.com/uploads/shopping_cart/8621/large_graditude-title.png");
+    background-position: center left;
+    background-position: 20% 38%;
+    background-repeat: no-repeat;
+    background-size:20%;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    background-color: #fce3ec;
+
+}
+
+#suggestion-sections{
+    order: 1;
+}
+
+#form-section{
+order: 2;
+}
+
+form {
+    width: 32vw;
+    height: 75vh;
+    padding: 5vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f17fad;
+
+
+}
+
+#name,
+#email,
+#message,
+#subject,
+#sendersName,
+button {
+    margin: 10px 0;
+}
+
+#message {
+    height: 275px;
+    /* padding-bottom: 200px; */
+}
+
+
+#suggestions {
+    width: 31vw;
+    height: 74vh;
+    border: 1px solid black;
+    overflow: scroll;
+    background-color: #f17fad;
+    margin-bottom: 2vh;
+    order: 1;
+}
+
+.subjectDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+
+
+
+}
+
+.messageDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    line-height: 30px;
+
+}
+
+
+.fa-arrow-right {
+    margin-left: auto;
+    margin-top: auto;
+}
+
+
+.fa-arrow-right:hover {
+   transform: scale(1.5);
+}
+
+/* p {
+    margin: 5px;
+} */
+
+.card {
+    padding: 5px;
+    margin: 10px;
+    box-shadow: -3px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+#saved {
+    width: 31vw;
+    height: 67vh;
+    border: 1px solid black;
+    overflow: scroll;
+    background-color: #f17fad;
+    /* margin-bottom: 15px; */
+
+}
+
+#saved-section{
+    display: flex;
+    flex-direction: column;
+    order: 3;
+}
+
+.fa-trash {
+    color: red;
+    align-self: center;
+
+}
+
+footer {
+    border-top: 1px solid black;
+    padding: 3vh;
+}
+
+
+@media (max-width:1001px) {
+
+header {
+        background-position: center left;
+        background-position: 5% 30%;
+        background-repeat: no-repeat;
+        background-size: 65%;
+        padding: 0 5vw;
+    }
+
+    h1{
+        font-size: 2rem;
+        text-align: right;
+        margin: 25px 0;
+    }
+
+    main {
+        flex-direction: column;
+        display: flex;
+    }
+
+    #form-section {
+        order: 1;
+    }
+
+    #suggestion-section {
+        order: 2;
+        margin: 10px 0;
+    }
+
+    #suggestions,
+    form,
+    #saved {
+        width: 90vw;
+        overflow: scroll;
+    }
+}
